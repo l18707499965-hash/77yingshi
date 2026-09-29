@@ -5,8 +5,9 @@ import { SITE, siteUrl } from '@/lib/config';
 export const baseMetadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
+    // 品牌词置于所有页面标题最前，强化关键词相关性
     default: `${SITE.name} - ${SITE.nameSub} | 海量影视免费追剧`,
-    template: `%s | ${SITE.name}`,
+    template: `${SITE.name} - %s`,
   },
   description: SITE.description,
   keywords: SITE.keywords,
